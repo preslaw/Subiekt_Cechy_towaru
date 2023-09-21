@@ -1,0 +1,15 @@
+SELECT
+tw_Symbol as Symbol,
+tw_Uwagi,
+cht_IdCecha,
+ctw_Nazwa
+
+FROM tw__towar 
+JOIN tw_CechaTw ON tw_ID=cht_IdTowar
+JOIN sl_CechaTw  ON cht_IdCecha=ctw_Id
+
+ORDER BY
+tw_Symbol,
+cht_IdCecha
+
+
